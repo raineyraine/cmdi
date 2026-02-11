@@ -1,0 +1,46 @@
+{
+	"compilerOptions": {
+		// required
+		"allowSyntheticDefaultImports": true,
+		"downlevelIteration": true,
+		"jsx": "react",
+		"jsxFactory": "React.createElement",
+		"jsxFragmentFactory": "React.Fragment",
+		"module": "commonjs",
+		"moduleResolution": "Node",
+		"noLib": true,
+		"resolveJsonModule": true,
+		"experimentalDecorators": true,
+		"forceConsistentCasingInFileNames": true,
+		"moduleDetection": "force",
+		"strict": true,
+		"target": "ESNext",
+		"typeRoots": ["${configDir}/node_modules/@rbxts"],
+
+		// configurable
+		"rootDir": "${configDir}/src",
+		"outDir": "${configDir}/out",
+		"incremental": true,
+		"tsBuildInfoFile": "${configDir}/out/tsconfig.tsbuildinfo",
+		"declaration": true,
+
+		// rules
+		"allowUnreachableCode": false,
+		"exactOptionalPropertyTypes": true,
+		"noFallthroughCasesInSwitch": true,
+		"noImplicitOverride": true,
+		"noImplicitReturns": true,
+		"noPropertyAccessFromIndexSignature": true,
+		"noUncheckedIndexedAccess": true,
+		"useUnknownInCatchVariables": true,
+		"plugins": [
+			{
+				"name": "ts-plugin-sort-import-suggestions",
+				"moveDownPatterns": ["@rbxts"]
+			}
+		]
+	},
+
+	"include": ["${configDir}/**/*/*.ts", "${configDir}/**/*/*.tsx"],
+	"exclude": ["${configDir}/node_modules", "${configDir}/out", "${configDir}/**/.*/"]
+}

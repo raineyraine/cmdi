@@ -1,0 +1,26 @@
+{
+	"name": "cmdi",
+	"private": true,
+	"license": "MIT",
+	"author": "raine",
+	"type": "module",
+	"scripts": {
+		"lint": "eslint --cache",
+		"lint:fix": "eslint --cache --fix",
+		"prepare": "husky"
+	},
+	"devDependencies": {
+		"@commitlint/cli": "catalog:script",
+		"@commitlint/config-angular": "catalog:script",
+		"@commitlint/types": "catalog:types",
+		"@isentinel/eslint-config": "catalog:lint",
+		"eslint": "catalog:lint",
+		"eslint-plugin-pnpm": "catalog:lint",
+		"eslint-plugin-react-hooks": "catalog:lint",
+		"eslint-plugin-react-naming-convention": "catalog:lint",
+		"eslint-plugin-react-x": "catalog:lint",
+		"husky": "catalog:script",
+		"jiti": "catalog:script"
+	},
+	"packageManager": "pnpm@10.29.2"
+}
