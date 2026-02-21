@@ -6,14 +6,14 @@
 	"type": "module",
 	"main": "out/init.luau",
 	"types": "out/index.d.ts",
+	"dependencies": {
+		"@rbxts/luau-polyfill": "catalog:prod"
+	},
 	"devDependencies": {
 		"@rbxts/compiler-types": "catalog:types",
 		"@rbxts/types": "catalog:types",
 		"roblox-ts": "catalog:build",
 		"ts-plugin-sort-import-suggestions": "catalog:types"
 	},
-	"packageManager": "pnpm@10.29.2",
-	"dependencies": {
-		"@rbxts/luau-polyfill": "catalog:prod"
-	}
+	"packageManager": "pnpm@10.29.2"
 }
