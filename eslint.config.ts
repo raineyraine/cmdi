@@ -1,4 +1,4 @@
-import isentinel, { type TypedFlatConfigItem } from "@isentinel/eslint-config";
+import isentinel, { perfectionist, type TypedFlatConfigItem } from "@isentinel/eslint-config";
 
 export default isentinel(
 	{
@@ -14,13 +14,18 @@ export default isentinel(
 	{
 		name: "project/sort",
 		rules: {
-			"perfectionist/sort-enums": [
+			"perfectionist/sort-classes": [
 				"error",
 				{
-					partitionByComment: true,
-					partitionByNewLine: true,
+					partitionByNewLine: false,
 				},
 			],
+		},
+		settings: {
+			perfectionist: {
+				partitionByComment: true,
+				partitionByNewLine: true,
+			},
 		},
 	} satisfies TypedFlatConfigItem,
 );
