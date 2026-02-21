@@ -8,7 +8,8 @@ export default isentinel(
 		react: true,
 		roblox: true,
 
-		// Genuinely disgusting time taken sob
+		// disabled due to genuinely insane time taken for little benefit. look
+		// into re-enabling for documentation files?
 		spellCheck: false,
 	},
 	{
