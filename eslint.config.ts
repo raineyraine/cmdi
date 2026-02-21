@@ -8,8 +8,10 @@ export default isentinel(
 		react: true,
 		roblox: true,
 
-		// disabled due to genuinely insane time taken for little benefit. look
-		// into re-enabling for documentation files?
+		// disabled due to genuinely insane time taken for little benefit
+		formatters: {
+			lua: false,
+		},
 		spellCheck: false,
 	},
 	{
