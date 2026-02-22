@@ -34,9 +34,9 @@
 	],
 
 	"charmed-icons.associations.folders": {
-		"cmdi": "folder_middleware",
-		"cmdi-ui": "folder_layout",
-		"cmdi-language": "folder_lib"
+		"packages/core": "folder_middleware",
+		"packages/ui": "folder_layout",
+		"packages/language": "folder_lib"
 	},
 	"files.eol": "\n",
 
