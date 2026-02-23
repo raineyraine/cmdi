@@ -9,11 +9,10 @@ catalogs:
     roblox-ts:
       specifier: 3.0.0-dev-9165cde
       version: 3.0.0-dev-9165cde
-  default:
+  lint:
     '@eslint/config-inspector':
       specifier: ^1.4.2
       version: 1.4.2
-  lint:
     '@isentinel/eslint-config':
       specifier: ^4.7.9
       version: 4.7.9
@@ -68,10 +67,6 @@ pnpmfileChecksum: sha256-15yQafiOk/n/FnyMLJdjllwGXgNxN7Ro+mGuxVKxhic=
 importers:
 
   .:
-    dependencies:
-      '@eslint/config-inspector':
-        specifier: 'catalog:'
-        version: 1.4.2(eslint@9.39.2(jiti@2.6.1))
     devDependencies:
       '@commitlint/cli':
         specifier: catalog:script
@@ -82,6 +77,9 @@ importers:
       '@commitlint/types':
         specifier: catalog:types
         version: 20.4.0
+      '@eslint/config-inspector':
+        specifier: catalog:lint
+        version: 1.4.2(eslint@9.39.2(jiti@2.6.1))
       '@isentinel/eslint-config':
         specifier: catalog:lint
         version: 4.7.9(@types/estree@1.0.8)(@typescript-eslint/utils@8.56.0(eslint@9.39.2(jiti@2.6.1))(typescript@5.5.3))(eslint-plugin-jest@28.14.0(@typescript-eslint/eslint-plugin@8.49.0(@typescript-eslint/parser@8.49.0(eslint@9.39.2(jiti@2.6.1))(typescript@5.5.3))(eslint@9.39.2(jiti@2.6.1))(typescript@5.5.3))(eslint@9.39.2(jiti@2.6.1))(typescript@5.5.3))(eslint-plugin-n@17.23.2(eslint@9.39.2(jiti@2.6.1))(typescript@5.5.3))(eslint-plugin-react-hooks@7.0.1(eslint@9.39.2(jiti@2.6.1)))(eslint-plugin-react-naming-convention@2.12.2(eslint@9.39.2(jiti@2.6.1))(typescript@5.5.3))(eslint-plugin-react-x@2.12.2(eslint@9.39.2(jiti@2.6.1))(typescript@5.5.3))(eslint@9.39.2(jiti@2.6.1))(typescript@5.5.3)
