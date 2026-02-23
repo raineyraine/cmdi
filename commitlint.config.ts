@@ -28,6 +28,8 @@ export default {
 				"ui",
 				// Changes to any assets (image, audio, etc)
 				"assets",
+				// Releasing a new version
+				"release",
 			],
 		],
 	},
