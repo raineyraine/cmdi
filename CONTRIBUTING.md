@@ -50,11 +50,12 @@ required to show what issues the commit is related to.
 
 For certain commit types, a scope is required:
 
-| Scope  | Description                                                            |
-| ------ | ---------------------------------------------------------------------- |
-| dev    | Changes to development tools and documentation                         |
-| deps   | Changes to dependencies                                                |
-| core   | Changes to `@rbxts/cmdi` (packages/core) or relevant docs              |
-| lang   | Changes to `@rbxts/cmdi-language` (packages/language) or relevant docs |
-| feat   | Changes to `@rbxts/cmdi-ui` (packages/ui) or relevant docs             |
-| assets | Changes to any assets (images, audio, etc.)                            |
+| Scope   | Description                                                            |
+| ------- | ---------------------------------------------------------------------- |
+| dev     | Changes to development tools and documentation                         |
+| deps    | Changes to dependencies                                                |
+| core    | Changes to `@rbxts/cmdi` (packages/core) or relevant docs              |
+| lang    | Changes to `@rbxts/cmdi-language` (packages/language) or relevant docs |
+| feat    | Changes to `@rbxts/cmdi-ui` (packages/ui) or relevant docs             |
+| assets  | Changes to any assets (images, audio, etc.)                            |
+| release | Releasing a new version                                                |
