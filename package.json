@@ -6,6 +6,7 @@
 	"type": "module",
 	"scripts": {
 		"lint": "eslint --cache",
+		"lint:ci": "eslint --cache --cache-strategy content",
 		"lint:fix": "eslint --cache --fix",
 		"lint:inspect": "pnpx @eslint/config-inspector",
 		"prepare": "husky"
