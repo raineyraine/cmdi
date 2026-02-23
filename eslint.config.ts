@@ -55,6 +55,13 @@ const config = isentinel(
 			},
 		},
 	} satisfies TypedFlatConfigItem,
+	{
+		name: "project/rules",
+		rules: {
+			// Annoying, functions can be self-descriptive just with their names
+			"jsdoc/require-description": "off",
+		},
+	} satisfies TypedFlatConfigItem,
 );
 
 export default config;
