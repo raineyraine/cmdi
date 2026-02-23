@@ -8,12 +8,15 @@ trustPolicy: no-downgrade
 
 trustPolicyExclude:
   - chokidar@4.0.3
+  - webpack@4.47.0 || 5.102.1
+  - "@babel/core@7.28.5"
 packages:
   - packages/*
 catalogs:
   build:
     roblox-ts: 3.0.0-dev-9165cde
   lint:
+    "@eslint/config-inspector": ^1.4.2
     "@isentinel/eslint-config": ^4.7.9
     eslint: ^9.39.1
     eslint-plugin-pnpm: ^1.5.0

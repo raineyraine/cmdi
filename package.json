@@ -15,6 +15,7 @@
 		"@commitlint/cli": "catalog:script",
 		"@commitlint/config-angular": "catalog:script",
 		"@commitlint/types": "catalog:types",
+		"@eslint/config-inspector": "catalog:lint",
 		"@isentinel/eslint-config": "catalog:lint",
 		"eslint": "catalog:lint",
 		"eslint-plugin-pnpm": "catalog:lint",
