@@ -1,12 +1,17 @@
-import type { Ast } from "./ast/types";
-import { runTree, VirtualMachine } from "./treewalker";
+import { Scanner } from "./lexer/scanner";
+import type { Token } from "./lexer/types";
+import type { Issue } from "./types";
 
-export * from "./lexer";
-export * from "./treewalker";
-export * from "./types";
+export function run(
+	source: string,
+): [hasIssue: boolean, issues: Array<Issue>, tokens: Array<Token>] {
+	const scanner = new Scanner(source);
+	scanner.scan();
 
-export function run(tree: Ast): void {
-	const vm = new VirtualMachine();
+	const { hasIssue, issues, tokens } = scanner;
 
-	runTree(vm, tree);
+	return [hasIssue, issues, tokens];
 }
+
+export * from "./types";
+export * from "./utils";
