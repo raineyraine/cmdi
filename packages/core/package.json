@@ -6,11 +6,16 @@
 	"type": "module",
 	"main": "out/init.luau",
 	"types": "out/index.d.ts",
+	"files": ["out", "!**/*.tsbuildinfo", "!**/__tests__"],
 	"scripts": {
-		"build": "rbxtsc --verbose"
+		"build": "rbxtsc --verbose",
+		"prepare": "pnpm build",
+		"watch": "rbxtsc -w --verbose"
 	},
 	"dependencies": {
-		"@rbxts/luau-polyfill": "catalog:prod"
+		"@rbxts/charm": "catalog:prod",
+		"@rbxts/luau-polyfill": "catalog:prod",
+		"@rbxts/remo": "catalog:prod"
 	},
 	"devDependencies": {
 		"@rbxts/compiler-types": "catalog:types",

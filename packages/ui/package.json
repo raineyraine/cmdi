@@ -6,6 +6,12 @@
 	"type": "module",
 	"main": "out/init.luau",
 	"types": "out/index.d.ts",
+	"files": ["out", "!**/*.tsbuildinfo", "!**/__tests__"],
+	"scripts": {
+		"build": "rbxtsc --verbose",
+		"prepare": "pnpm build",
+		"watch": "rbxtsc -w --verbose"
+	},
 	"dependencies": {
 		"@rbxts/luau-polyfill": "catalog:prod"
 	},

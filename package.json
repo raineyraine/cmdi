@@ -9,6 +9,8 @@
 		"lint:ci": "eslint --cache --cache-strategy content",
 		"lint:fix": "eslint --cache --fix",
 		"lint:inspect": "pnpx @eslint/config-inspector",
+		"packages:build": "pnpm --filter \"./packages/*\" build",
+		"packages:watch": "pnpm --filter \"./packages/*\" watch",
 		"prepare": "husky"
 	},
 	"devDependencies": {
