@@ -28,6 +28,7 @@ catalogs:
     "@rbxts/charm": ^0.10.0
     "@rbxts/luau-polyfill": ^1.1.3
     "@rbxts/remo": ^1.5.3
+    "@rbxts/services": ^1.6.0
   script:
     "@commitlint/cli": ^20.4.1
     "@commitlint/config-angular": ^20.4.1
