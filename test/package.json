@@ -1,0 +1,28 @@
+{
+	"name": "cmdi-test",
+	"private": true,
+	"license": "MIT",
+	"author": "raine",
+	"type": "module",
+	"main": "out/init.luau",
+	"types": "out/index.d.ts",
+	"scripts": {
+		"build": "rbxtsc --verbose",
+		"dev": "lune run watch",
+		"watch": "rbxtsc -w --verbose"
+	},
+	"dependencies": {
+		"@rbxts/cmdi": "workspace:^",
+		"@rbxts/cmdi-language": "workspace:^",
+		"@rbxts/cmdi-ui": "workspace:^",
+		"@rbxts/luau-polyfill": "catalog:prod",
+		"@rbxts/services": "catalog:prod"
+	},
+	"devDependencies": {
+		"@rbxts/compiler-types": "catalog:types",
+		"@rbxts/types": "catalog:types",
+		"roblox-ts": "catalog:build",
+		"ts-plugin-sort-import-suggestions": "catalog:types"
+	},
+	"packageManager": "pnpm@10.29.2"
+}
