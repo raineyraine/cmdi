@@ -3,3 +3,4 @@ out/
 include/
 
 .eslintcache
+**/test.rbxl*
