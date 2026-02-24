@@ -32,5 +32,32 @@ export default {
 				"release",
 			],
 		],
+
+		"type-enum": [
+			RuleConfigSeverity.Error,
+			"always",
+			[
+				// Changes that affect the build system or external dependencies
+				"build",
+				// Changes to our CI configuration files and scripts
+				"ci",
+				// Documentation only changes (including JSDoc comments)
+				"docs",
+				// A new feature
+				"feat",
+				// A bug fix
+				"fix",
+				// A code change that improves performance
+				"perf",
+				// A code change that neither fixes a bug nor adds a feature
+				"refactor",
+				"revert",
+				"style",
+				// Adding missing tests or correcting existing tests
+				"test",
+				// Another misc change, e.g. releases or generating files
+				"chore",
+			],
+		],
 	},
 } satisfies UserConfig;

@@ -35,6 +35,7 @@ required to show what issues the commit is related to.
 | perf     | A code change that improves performance                       |
 | refactor | A code change that neither fixes a bug nor adds a feature     |
 | test     | Adding missing tests or correcting existing tests             |
+| chore    | Another misc change, e.g. releases or generating files        |
 
 #### Notes
 
