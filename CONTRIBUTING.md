@@ -36,6 +36,8 @@ required to show what issues the commit is related to.
 | refactor | A code change that neither fixes a bug nor adds a feature     |
 | test     | Adding missing tests or correcting existing tests             |
 | chore    | Another misc change, e.g. releases or generating files        |
+| revert   | A commit that reverts a change                                |
+| style    | A commit making a stylistic change (lints included)           |
 
 #### Notes
 

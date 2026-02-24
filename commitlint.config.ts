@@ -1,13 +1,13 @@
 import type { UserConfig } from "@commitlint/types";
 import { RuleConfigSeverity } from "@commitlint/types";
 
+// change to conventional commits later
 export default {
 	extends: ["@commitlint/config-angular"],
 	rules: {
+		"body-case": [RuleConfigSeverity.Error, "always", "sentence-case"],
 		"body-max-length": [RuleConfigSeverity.Error, "always", 100],
 		"footer-max-length": [RuleConfigSeverity.Error, "always", 100],
-
-		"body-case": [RuleConfigSeverity.Error, "always", "sentence-case"],
 		"scope-enum": [
 			RuleConfigSeverity.Warning,
 			"always",
@@ -32,7 +32,7 @@ export default {
 				"release",
 			],
 		],
-
+		"subject-exclamation-mark": [RuleConfigSeverity.Disabled, "never"],
 		"type-enum": [
 			RuleConfigSeverity.Error,
 			"always",
@@ -51,7 +51,9 @@ export default {
 				"perf",
 				// A code change that neither fixes a bug nor adds a feature
 				"refactor",
+				// A code change that neither fixes a bug nor adds a feature
 				"revert",
+				//
 				"style",
 				// Adding missing tests or correcting existing tests
 				"test",
