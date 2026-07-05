@@ -1,0 +1,12 @@
+name = "raineyraine/cmdi_workspace"
+version = "0.0.0"
+license = "MIT"
+private = true
+
+workspace_members = ["packages/*"]
+
+[target]
+environment = "luau"
+
+[indices]
+default = "https://github.com/pesde-pkg/index"

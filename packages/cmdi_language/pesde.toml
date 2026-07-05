@@ -1,0 +1,10 @@
+name = "raineyraine/cmdi_language"
+version = "0.1.0"
+license = "MIT"
+
+[target]
+lib = "src/init.luau"
+environment = "luau"
+
+[indices]
+default = "https://github.com/pesde-pkg/index"

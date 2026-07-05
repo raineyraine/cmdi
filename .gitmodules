@@ -1,0 +1,3 @@
+[submodule "vendor/lute"]
+	path = vendor/lute
+	url = https://github.com/luau-lang/lute.git
